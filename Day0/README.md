@@ -1,6 +1,17 @@
-# Tool check #
+# Task – Tool Installation & Environment Setup (VSD SoC Lab) #
+- This repository contains the setup steps, verification outputs, and tool snapshots related to Task 2 of the VSD RISC-V SoC Lab.
+- The task includes installing all required tools on the specified machine configuration, validating installations, and updating the GitHub repository with screenshots confirming proper setup.
 
-### Yosys ###
+## Machine Configuration  ##
+
+### System Requirements: ###
+- 6 GB RAM
+- 50 GB HDD
+- Ubuntu 20.04+
+- 4 vCPU
+
+
+- ### Yosys ###
 ```
 sudo apt-get update
 git clone https://github.com/YosysHQ/yosys.git
@@ -16,21 +27,21 @@ sudo make install
 ```
 <img width="1207" height="595" alt="yosys" src="https://github.com/user-attachments/assets/c3341e94-19f2-4526-830b-6bf055cc3f13" />
 
-### Iverilog ###
+- ### Iverilog ###
 ```
 sudo apt-get update
 sudo apt-get install iverilog 
 ```
 <img width="1190" height="560" alt="iverilog" src="https://github.com/user-attachments/assets/d45a520b-a348-4f43-bfcf-a2d4c47b1d3d" />
 
-### gtkwave ###
+- ### gtkwave ###
 ```
 sudo apt-get update
 sudo apt install gtkwave  
 ```
 <img width="1165" height="714" alt="gtkwavem" src="https://github.com/user-attachments/assets/da2826ce-6077-4546-969c-e621469596d3" />
 
-### ngspice ###
+- ### ngspice ###
 Download the tarball from https://sourceforge.net/projects/ngspice/files/ to a local directory, unpack it using: 
 
 ```
@@ -44,7 +55,7 @@ sudo make install
 ```
 <img width="851" height="219" alt="ngspice" src="https://github.com/user-attachments/assets/093f6319-a721-464d-85bd-48746082e680" />
 
-### magic ###
+- ### magic ###
 ```
 sudo apt-get install m4
 sudo apt-get install tcsh
@@ -62,7 +73,7 @@ make install
 ```
 <img width="1178" height="682" alt="magic" src="https://github.com/user-attachments/assets/a27866e2-3580-4aea-a78c-271eefc408cd" />
 
-### OpenLANE ###
+- ### OpenLANE ###
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -84,10 +95,12 @@ docker run hello-world
 ```
 - Docker printing Hello World
 <img width="1189" height="407" alt="docker" src="https://github.com/user-attachments/assets/ec9983d5-184c-4100-aa60-03cb0bd60368" />
+
 - Openlane Version Check
+  
 <img width="804" height="78" alt="openlane" src="https://github.com/user-attachments/assets/e8a42095-80f3-4307-b68f-a92d38514f7f" />
 
-### Check dependencies ###
+- ### Check dependencies ###
 ```
 git --version
 docker --version
@@ -98,7 +111,7 @@ python3 -m venv -h
 ```
 <img width="1192" height="726" alt="Screenshot from 2025-09-20 19-45-20" src="https://github.com/user-attachments/assets/a2bdcb3e-eac3-4594-b39c-df9228772feb" />
  
- ### Installs PDKs and Tools ### 
+ - ### Installs PDKs and Tools ### 
 ```
 cd $HOME
 git clone https://github.com/The-OpenROAD-Project/OpenLane
