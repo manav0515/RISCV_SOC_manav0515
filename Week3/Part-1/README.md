@@ -207,5 +207,44 @@ gtkwave post_synth_sim.vcd
 
 ---
 
+# 🧠 BabySoC – Gate-Level Simulation (GLS) Verification Report
 
+---
+
+## 📊 Waveform Analysis
+
+| **Observation** | **Functional Simulation (Pre-Synthesis)** | **Gate-Level Simulation (Post-Synthesis)** |
+|------------------|-------------------------------------------|---------------------------------------------|
+| **Reset & Control Signals** | All control signals (`reset`, `EN`, etc.) transition cleanly with ideal timing. | Same transitions observed with **minor gate-level propagation delay**. |
+| **Clock Behavior (PLL Output)** | Stable and periodic clock waveform from PLL. Ideal clock edges visible. | Clock frequency and duty cycle match RTL, but **edges slightly shifted** due to synthesis delays. |
+| **Core / Pipeline Activity** | DAC input data (`D[9:0]`, `Dext[10:0]`) transitions correctly, showing proper pipeline functionality. | Same logical behavior observed; **minor skew** introduced by gate-level net delays. |
+| **DAC Output (`OUT`)** | Smooth analog-like waveform formed by the DAC, representing correct digital-to-analog conversion. | Identical DAC waveform shape, **slightly delayed and smoothed** due to realistic timing effects. |
+| **VREFH / VREFL Behavior** | Reference voltages steady and clean throughout simulation. | Same reference stability, confirming proper power and bias modeling. |
+
+---
+
+## 📦 Deliverables
+
+| **Deliverable** | **File / Folder** | **Description** |
+|-----------------|------------------|------------------|
+| **Synthesis Log** | `synthesis_log.txt` | Log of synthesis run from Yosys. |
+| **GLS Waveform Screenshots** | `screenshots/` | GTKWave captures of gate-level simulation. |
+| **GLS Verification Note** | `NOTES.md` | Confirmation that GLS results match functional outputs. |
+
+---
+
+## 🧾 Conclusion
+
+The **Gate-Level Simulation (GLS)** for **BabySoC** confirms that:
+
+- Post-synthesis behavior **matches the RTL functional simulation**.  
+- Control, pipeline, and DAC output waveforms remain **functionally identical**.  
+- Only expected **timing and propagation delays** are observed.  
+- The synthesized design **retains full logical correctness**.
+
+---
+
+✅ **Final Verdict:**  
+**GLS = Functional Outputs**  
+> BabySoC design successfully verified at gate-level.
 
