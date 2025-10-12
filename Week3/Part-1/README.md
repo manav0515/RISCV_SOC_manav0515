@@ -12,7 +12,7 @@
 
 ---
 
-## 🧩 Introduction
+## Introduction
 
 In modern VLSI design flows, **Gate-Level Simulation (GLS)** is a crucial verification step that ensures the synthesized netlist behaves identically to the original RTL design.  
 While **RTL simulations** are logic-based and idealized, **GLS** takes into account the actual logic gates, standard cells, and interconnect delays introduced during synthesis.
@@ -22,7 +22,7 @@ The objective is to confirm that synthesis preserves both **logical correctness*
 
 ---
 
-## 🎯 Purpose of GLS
+## Purpose of GLS
 
 | Aspect | Description |
 |--------|--------------|
@@ -35,7 +35,7 @@ In simpler terms, **GLS = “Reality Check” for your RTL design.**
 
 ---
 
-## ⚙️ About BabySoC Design
+## About BabySoC Design
 
 **BabySoC** is a compact SoC consisting of:
 - **RISC-V Core** (`rvmyth.v`) – A 5-stage pipelined processor.
@@ -47,7 +47,7 @@ Each module interacts through well-defined interfaces, and the top-level integra
 
 ---
 
-## 🏗️ Post-Synthesis Workflow
+## Post-Synthesis Workflow
 
 ### 1. **Synthesis (Logic Mapping)**
 - Tool used: **Yosys**
@@ -65,7 +65,7 @@ Each module interacts through well-defined interfaces, and the top-level integra
 
 ---
 
-## 🧪 Steps to Run Post-Synthesis Simulation
+## Steps to Run Post-Synthesis Simulation
 
 ### 🧰 Prerequisites
 Ensure you have:
@@ -211,7 +211,7 @@ gtkwave post_synth_sim.vcd
 
 ---
 
-## 📊 Waveform Analysis
+## Waveform Analysis
 
 | **Observation** | **Functional Simulation (Pre-Synthesis)** | **Gate-Level Simulation (Post-Synthesis)** |
 |------------------|-------------------------------------------|---------------------------------------------|
@@ -223,7 +223,7 @@ gtkwave post_synth_sim.vcd
 
 ---
 
-## 📦 Deliverables
+## Deliverables
 
 | **Deliverable** | **File / Folder** | **Description** |
 |-----------------|------------------|------------------|
@@ -233,7 +233,7 @@ gtkwave post_synth_sim.vcd
 
 ---
 
-## 🧾 Conclusion
+## Conclusion
 
 The **Gate-Level Simulation (GLS)** for **BabySoC** confirms that:
 
