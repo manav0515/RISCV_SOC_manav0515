@@ -79,7 +79,7 @@ Ensure you have:
 ```bash
 yosys
 ```
-Screenshot: -
+<img width="1212" height="309" alt="Screenshot from 2025-10-05 16-57-25" src="https://github.com/user-attachments/assets/605e8f7c-f7da-4e10-b4d2-a33a4806b79e" />
 
 ### Inside the Yosys shell, run:
 ```
@@ -89,11 +89,8 @@ read_verilog -I /home/manav/VSDBabySoC/src/include /home/manav/src/module/rvmyth
 read_verilog -I /home/manav/VSDBabySoC/src/include /home/manav/src/module/clk_gate.v
 
 ```
-![WhatsApp Image 2024-11-16 at 5 54 12 AM](https://github.com/user-attachments/assets/648dc511-7c3c-496a-97c7-a24aa6cb0bae)
+<img width="1212" height="309" alt="Screenshot from 2025-10-05 17-01-55" src="https://github.com/user-attachments/assets/28c5b48d-a335-46e2-8b11-21855b2d576c" />
 
-![WhatsApp Image 2024-11-16 at 5 20 29 AM (2)](https://github.com/user-attachments/assets/6db87310-6389-4f7c-9418-40e4f6780c18)
-
-![WhatsApp Image 2024-11-16 at 5 20 29 AM (1)](https://github.com/user-attachments/assets/8eddf6c8-c3fb-44d9-b804-5eb836558c44)
 
 ---
 ### **Step 2: Load the Liberty Files for Synthesis**
@@ -103,8 +100,9 @@ yosys
 read_liberty -lib /home/manav/VSDBabySoC/src/lib/avsdpll.lib
 read_liberty -lib /home/manav/VSDBabySoC/src/lib/avsddac.lib
 read_liberty -lib /home/manav/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
 ```
-![WhatsApp Image 2024-11-16 at 5 20 29 AM](https://github.com/user-attachments/assets/2ec505bd-8004-415f-ba9c-3b76a41562f8)
+<img width="1212" height="266" alt="Screenshot from 2025-10-05 17-03-57" src="https://github.com/user-attachments/assets/2c5a5f85-35a7-4f36-880e-ff3c9ed7dfd4" />
 
 ---
 
@@ -112,12 +110,12 @@ read_liberty -lib /home/manav/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.l
 ```yosys
 synth -top vsdbabysoc
 ```
-![WhatsApp Image 2024-11-16 at 5 20 28 AM](https://github.com/user-attachments/assets/8a49050d-55cb-4ae2-9a93-5fe7c2c72710)
-![WhatsApp Image 2024-11-16 at 5 20 26 AM](https://github.com/user-attachments/assets/f00545e7-bb37-4444-80e7-0881938fb634)
-![WhatsApp Image 2024-11-16 at 5 20 24 AM (2)](https://github.com/user-attachments/assets/655dfaaf-bece-47dc-8a24-bf257e064a4f)
-![WhatsApp Image 2024-11-16 at 5 20 24 AM (1)](https://github.com/user-attachments/assets/5d7a9d12-7722-432c-8ad6-270be51b1df9)
-![WhatsApp Image 2024-11-16 at 5 20 24 AM](https://github.com/user-attachments/assets/51f25b92-c968-4cf3-b553-21ecdbefc828)
-![WhatsApp Image 2024-11-16 at 5 20 23 AM (8)](https://github.com/user-attachments/assets/241a089c-ce62-4f2c-8c6b-9e76d3929197)
+<img width="1212" height="772" alt="Screenshot from 2025-10-05 17-06-31" src="https://github.com/user-attachments/assets/96e7847d-4506-4e15-88e9-d172892e31ad" />
+<img width="1208" height="257" alt="Screenshot from 2025-10-05 17-07-40" src="https://github.com/user-attachments/assets/59920857-a3c0-4092-95b9-e1f40609bb6b" />
+<img width="1194" height="512" alt="Screenshot from 2025-10-12 16-15-45" src="https://github.com/user-attachments/assets/9050465e-69fc-49cb-967f-df0c60a71aa5" />
+<img width="902" height="336" alt="Screenshot from 2025-10-05 17-08-24" src="https://github.com/user-attachments/assets/af1e66dc-e626-4e61-af65-3fdd1bfcc5e8" />
+<img width="1209" height="731" alt="Screenshot from 2025-10-05 17-09-13" src="https://github.com/user-attachments/assets/8f74f4dc-97a3-4e37-b94b-2f935db318b3" />
+<img width="1006" height="145" alt="Screenshot from 2025-10-05 17-09-48" src="https://github.com/user-attachments/assets/fcfad714-f4a0-4e3e-b683-236b6c697c19" />
 
 ---
 
@@ -125,7 +123,9 @@ synth -top vsdbabysoc
 ```yosys
 dfflibmap -liberty /home/manav/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
-![WhatsApp Image 2024-11-16 at 5 20 23 AM (7)](https://github.com/user-attachments/assets/566b121d-a5da-47c2-a09b-1660592569c5)
+<img width="1212" height="774" alt="Screenshot from 2025-10-05 17-11-58" src="https://github.com/user-attachments/assets/53f6b7a2-40ac-4ea3-a06f-3d1aad8bfa73" />
+<img width="1212" height="774" alt="Screenshot from 2025-10-05 17-14-43" src="https://github.com/user-attachments/assets/b9c8067c-cd0d-4019-83af-d51dabd0a897" />
+<img width="1194" height="512" alt="Screenshot from 2025-10-12 16-18-00" src="https://github.com/user-attachments/assets/e89b2a8d-d996-4eb0-bfd9-86346c65e1a9" />
 
 ---
 
@@ -134,8 +134,6 @@ dfflibmap -liberty /home/manav/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.
 opt
 abc -liberty /home/manav/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -script +strash;scorr;ifraig;retime;{D};strash;dch,-f;map,-M,1,{D}
 ```
-![WhatsApp Image 2024-11-16 at 5 20 23 AM (6)](https://github.com/user-attachments/assets/5657a167-e0e2-431a-882e-4a785b059b5d)
-![WhatsApp Image 2024-11-16 at 5 20 23 AM (5)](https://github.com/user-attachments/assets/a0ab61ba-24dc-4b9b-83fa-eb5b78f79f40)
 
 ---
 
@@ -146,17 +144,17 @@ setundef -zero
 clean -purge
 rename -enumerate
 ```
-![WhatsApp Image 2024-11-16 at 5 20 23 AM (4)](https://github.com/user-attachments/assets/e2fd7bc4-5e8a-4236-84dc-002887f3eb82)
+<img width="1212" height="262" alt="Screenshot from 2025-10-05 17-15-52" src="https://github.com/user-attachments/assets/c6b568d5-8e02-4bee-8d83-b412213781d8" />
+
 
 ---
+
 
 ### **Step 7: Check Statistics**
 ```yosys
 stat
 ```
-![WhatsApp Image 2024-11-16 at 5 20 23 AM (3)](https://github.com/user-attachments/assets/292c9093-9a6d-417e-b094-0b8a6e27e7c3)
-![WhatsApp Image 2024-11-16 at 5 20 23 AM (2)](https://github.com/user-attachments/assets/ce8ad45b-92ae-4cc8-a4dd-0f52028e078e)
-![WhatsApp Image 2024-11-16 at 5 20 23 AM (1)](https://github.com/user-attachments/assets/e1741767-2b83-4d88-909e-e5d4c73411f4)
+
 
 ---
 
@@ -164,8 +162,11 @@ stat
 ```yosys
 write_verilog -noattr /home/manav/VSDBabySoC/output/post_synth_sim/vsdbabysoc.synth.v
 ```
-![WhatsApp Image 2024-11-16 at 5 20 23 AM](https://github.com/user-attachments/assets/1e0444b4-ad66-4798-b7f7-7bc1e13cf88a)
+<img width="1212" height="184" alt="Screenshot from 2025-10-05 17-17-25" src="https://github.com/user-attachments/assets/78534a5f-159c-4734-aa72-64c5759d5656" />
 
+---
+### **Outputs Of Yosys(Synthesis) Are In The Following Log File**
+- [synthesis_log.txt](./output/synthesis_log.txt)
 ---
 
 ## POST_SYNTHESIS SIMULATION AND WAVEFORMS
