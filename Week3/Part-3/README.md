@@ -94,7 +94,7 @@ The graph also includes **timestamp** and **user ID** for tracking execution ide
 "sky130_fd_sc_hd__tt_025C_1v80.lib"
 ```
 
-- **Input File: -**
+- ### **Input File: -**
 ```
 set list_of_lib_files(1) "sky130_fd_sc_hd__tt_025C_1v80.lib"
 
@@ -121,25 +121,32 @@ report_wns -digits {4} >> ./sta_output/sta_wns.txt
 }
 ```
 
-**Link to the file: -** **[Input File](./Input%20Files/sta_across_pvt_sky130_fd_sc_hd__tt_025C_1v80.tcl.txt)**
+- **Link to the file: -**                                                       
+***[Input File](./Input%20Files/sta_across_pvt_sky130_fd_sc_hd__tt_025C_1v80.tcl.txt)***
 
-- **Screenshot – STA Timing Report:**  
+---
+### **Screenshot – STA Timing Report:**  
 <img width="1196" height="1350" alt="sky130_fd_sc_hd__tt_025C_1v80___" src="https://github.com/user-attachments/assets/7573b389-eaf5-49cb-86a6-f6f4d6e9cb9a" />
 
 
-- **Link to Report File:**  
+- **Link to Report File: -**                                           
 ***[sta_timing_report_tt.txt](./outputs/sta_timing_report_sky130_fd_sc_hd__tt_025C_1v80.txt)***
 
-- **Screenshot – Graph Output:**  
+---
+### **Slack & Other Outputs For Graph: -**
+  <img width="1485" height="162" alt="1v80" src="https://github.com/user-attachments/assets/6e2096b1-4807-48f0-94df-73afa1fe23a2" />
+
+
+  - **Link to CSV File: -**  
+***[tt_corner_metrics.csv](outputs/metrics_sky130_fd_sc_hd__tt_025C_1v80.csv)***
+---
+- ### **Screenshot – Graph Output:**  
 <img width="1280" height="800" alt="sky130_fd_sc_hd__tt_025C_1v80_" src="https://github.com/user-attachments/assets/f6d2fee6-1916-4f32-b59b-b985fd21f752" />
 <img width="947" height="605" alt="sky130_fd_sc_hd__tt_025C_1v80__" src="https://github.com/user-attachments/assets/4218a7ed-3066-4feb-b309-f16d9dd161e6" />
 
 
-- **Link to Graph File:**  
+- **Link to Graph File:**                       
 ***[tt_corner_graph.png](./outputs/sky130_fd_sc_hd__tt_025C_1v80__.png)***
-
-- **Link to CSV File:**  
-***[tt_corner_metrics.csv](outputs/metrics_sky130_fd_sc_hd__tt_025C_1v80.csv)***
 
 ---
 
@@ -176,25 +183,34 @@ exec echo "$list_of_lib_files($i)" >> ./sta_output/sta_wns.txt
 report_wns -digits {4} >> ./sta_output/sta_wns.txt
 }  
 ```  
-**Link to the file: -** ***[Input File](./Input%20Files/sta_across_pvt_sky130_fd_sc_hd__ff_n40C_1v95_.tcl.txt)***
+- **Link to the file: -**                            
+***[Input File](./Input%20Files/sta_across_pvt_sky130_fd_sc_hd__ff_n40C_1v95_.tcl.txt)***
 
-- ### **Screenshot – STA Timing Report:**  
+- ### **Screenshot – STA Timing Report: -**  
 <img width="1197" height="1350" alt="sky130_fd_sc_hd__ff_n40C_1v95__" src="https://github.com/user-attachments/assets/feb3b515-f9c3-4eda-be20-23d5877d426f" />
 
 
-- ### **Link to Report File:**  
+- **Link to Report File: -**                              
 ***[sta_timing_report_ff.txt](./outputs/sta_timing_report_sky130_fd_sc_hd__ff_n40C_1v95.txt)***
 
-- ### **Screenshot – Graph Output:**  
+---
+### **Slack & Other Outputs For Graph: -**
+  <img width="1347" height="116" alt="1v95" src="https://github.com/user-attachments/assets/0625617d-e506-447a-8209-b029752c2d61" />
+
+
+
+ - **Link to CSV File:**                 
+***[ff_corner_metrics.csv](./outputs/metrics_sky130_fd_sc_hd__ff_n40C_1v95.csv)***
+---
+
+- ### **Screenshot – Graph Output: -**                 
 <img width="1280" height="800" alt="sky130_fd_sc_hd__ff_n40C_1v95_" src="https://github.com/user-attachments/assets/d3567958-73f5-47d0-aadb-d22f6925a549" />
 <img width="1002" height="538" alt="sky130_fd_sc_hd__ff_n40C_1v95" src="https://github.com/user-attachments/assets/9cc2babe-7eda-4aee-b25b-31bdcc110a3f" />
 
 
-- ### **Link to Graph File:**  
+- **Link to Graph File: -**                
 ***[ff_corner_graph.png](./outputs/sky130_fd_sc_hd__ff_n40C_1v95.png)***
 
-- ### **Link to CSV File:**  
-***[ff_corner_metrics.csv](./outputs/metrics_sky130_fd_sc_hd__ff_n40C_1v95.csv)***
 
 ---
 
@@ -256,11 +272,15 @@ report_wns -digits {4} >> ./sta_output/sta_wns.txt
 }
 ``` 
 
-**Link to the file: -** ***[Input File](./Input%20Files/sta_across_pvt.tcl)***
+- **Link to the file: -**               
+***[Input File](./Input%20Files/sta_across_pvt.tcl)***
 
 ---
-- ### **Output Timings Table: -** 
+- ### **Output Timings Table: -**               
 <img width="1337" height="484" alt="Screenshot (525)" src="https://github.com/user-attachments/assets/3b441265-cfd9-4b58-b5fa-4ba808b798bb" />
+
+- **Link to CSV File: -**                 
+***[all_library_metrics.csv](./sta_output/all_library_metrics.pdf)***
 
 ---
 
@@ -288,12 +308,6 @@ report_wns -digits {4} >> ./sta_output/sta_wns.txt
 
 ---
 
-
-
-- ### **Link to CSV File:**  
-***[all_library_metrics.csv](./sta_output/all_library_metrics.pdf)***
-
----
 
 ## Reference
 
