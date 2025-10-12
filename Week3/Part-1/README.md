@@ -154,6 +154,7 @@ rename -enumerate
 ```yosys
 stat
 ```
+<img width="1111" height="1144" alt="image" src="https://github.com/user-attachments/assets/57d30eee-f6e5-44f2-8f7a-50cee29009a3" />
 
 
 ---
