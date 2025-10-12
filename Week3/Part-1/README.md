@@ -227,9 +227,9 @@ gtkwave post_synth_sim.vcd
 
 | **Deliverable** | **File / Folder** | **Description** |
 |-----------------|------------------|------------------|
-| **Synthesis Log** | `synthesis_log.txt` | Log of synthesis run from Yosys. |
-| **GLS Waveform Screenshots** | `screenshots/` | GTKWave captures of gate-level simulation. |
-| **GLS Verification Note** | `NOTES.md` | Confirmation that GLS results match functional outputs. |
+| **Synthesis Log** | [synthesis_log.txt](./output/synthesis_log.txt) | Log of synthesis run from Yosys. |
+| **GLS Waveform Screenshots** | [screenshots](screenshots) | GTKWave captures of gate-level simulation. |
+| **GLS Verification Note** | [NOTES.md](NOTES.md) | Confirmation that GLS results match functional outputs. |
 
 ---
 
